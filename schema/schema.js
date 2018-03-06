@@ -11,7 +11,7 @@ const baseURL = 'http://localhost:3000';
 
 const CompanyType = new GraphQLObjectType({
   name: 'Company',
-  fields: {
+  fields: () => {
     id: { type: GraphQLString },
     name: { type: GraphQLString },
     description: { type: GraphQLString },
